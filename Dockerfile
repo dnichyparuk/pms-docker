@@ -15,6 +15,7 @@ RUN \
       xmlstarlet \
       uuid-runtime \
       unrar \
+      vainfo \
     && \
 
 # Fetch and extract S6 overlay
@@ -24,7 +25,7 @@ RUN \
 # Add user
     useradd -U -d /config -s /bin/false plex && \
     usermod -G users plex && \
-    usermod -a video plex && \ 
+#    usermod -a video plex && \ 
 
 # Setup directories
     mkdir -p \
