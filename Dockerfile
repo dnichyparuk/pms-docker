@@ -1,4 +1,4 @@
-FROM nvidia/cuda:9.2-runtime-ubuntu16.04
+FROM nvidia/cuda:9.2-runtime-ubuntu18.04
 
 ARG S6_OVERLAY_VERSION=v1.17.2.0
 ARG DEBIAN_FRONTEND="noninteractive"
